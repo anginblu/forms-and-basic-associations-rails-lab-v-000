@@ -29,7 +29,7 @@ class Song < ActiveRecord::Base
   def note_contents=(notes)
     notes.each do |note_content|
       unless note_content == ""
-        note = Note.find_or_create_by(content: note_content) unless note_content == ""
+        note = Note.find_or_create_by(content: note_content)
         self.notes << note
       end
     end
