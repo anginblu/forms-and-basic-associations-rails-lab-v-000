@@ -15,6 +15,13 @@
 
   <%= f.label :notes %>
   <%= f.text_field :notes %>
+  <p>
+    <%= f.fields_for :students do |s| %>
+      <%= s.label :name %>
+      <%= s.text_field :name %>
+    <% end %>
+  </p>
+
   <br>
 
   <%= f.submit %>
