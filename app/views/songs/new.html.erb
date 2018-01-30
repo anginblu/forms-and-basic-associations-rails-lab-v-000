@@ -13,8 +13,6 @@
   <%= f.collection_select :genre_id, Genre.all, :id, :name, prompt: true %>
   <br>
 
-  <%= f.label :notes %>
-  <%= f.text_field :notes %>
   <p>
     <%= f.fields_for :notes do |s| %>
       <%= s.label :name %>
