@@ -14,7 +14,7 @@
   <br>
 
   <p>
-    <%= f.fields_for :notes do |s| %>
+    <%= f.fields_for :note_contents do |s| %>
       <%= s.label :name %>
       <%= s.text_field :name %>
     <% end %>
