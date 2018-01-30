@@ -16,7 +16,7 @@
   <%= f.label :notes %>
   <%= f.text_field :notes %>
   <p>
-    <%= f.fields_for :students do |s| %>
+    <%= f.fields_for :notes do |s| %>
       <%= s.label :name %>
       <%= s.text_field :name %>
     <% end %>
