@@ -13,10 +13,8 @@
   <%= f.collection_select :genre_id, Genre.all, :id, :name, prompt: true %>
   <br>
 
-  <%= label "Note 1" %>
   <%= text_field "song[notes][]" %>
   <br>
-  <%= label "Note 2" %>
   <%= text_field "song[notes][]" %>
   <br>
 
