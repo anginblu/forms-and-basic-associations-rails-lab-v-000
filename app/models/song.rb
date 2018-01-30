@@ -26,8 +26,8 @@ class Song < ActiveRecord::Base
     array
   end
 
-  def note_contents=(notes)
-    notes.each do |note_content|
+  def note_contents=(note_array)
+    note_array.each do |note_content|
       unless note_content == ""
         note = Note.find_or_create_by(content: note_content)
         self.notes << note
