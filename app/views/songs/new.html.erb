@@ -13,12 +13,10 @@
   <%= f.collection_select :genre_id, Genre.all, :id, :name, prompt: true %>
   <br>
 
-  <p>
-    <%= f.fields_for :notes do |s| %>
-      <%= s.input :1, label: "content1" %>
-      <%= s.input :2, label: "content1" %>
-    <% end %>
-  </p>
+  <%= f.fields_for :notes do |s| %>
+    <%= s.input :1, label: "content1" %>
+    <%= s.input :2, label: "content1" %>
+  <% end %>
 
   <br>
 
