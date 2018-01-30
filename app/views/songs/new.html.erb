@@ -13,9 +13,9 @@
   <%= f.collection_select :genre_id, Genre.all, :id, :name, prompt: true %>
   <br>
 
-  <%= f.text_field "notes[]", size: 50 %>
+  <%= f.text_field "notes[]"%>
   <br>
-  <%= f.text_field "song" "notes" %>
+  <%= f.text_field "notes[] %>
   <br>
 
   <%= f.submit %>
